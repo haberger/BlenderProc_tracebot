@@ -315,6 +315,7 @@ def add_bump(nodes: bpy.types.Nodes, links: bpy.types.NodeLinks, bump_image_path
     :param principled_bsdf: Principled BSDF node of the current material
     :return: bpy.types.Node: The newly constructed texture node
     """
+    pass
     bump_y_value = _y_texture_node * -3
     if os.path.exists(bump_image_path):
         bump_texture = create_image_node(nodes, bump_image_path, True,
@@ -341,6 +342,7 @@ def add_displacement(nodes: bpy.types.Nodes, links: bpy.types.NodeLinks, displac
     :param output_node: Output node of the current material
     :return: bpy.types.Node: The newly constructed texture node
     """
+    pass
     if os.path.exists(displacement_image_path):
         displacement_texture = create_image_node(nodes, displacement_image_path, True,
                                                  _x_texture_node,
